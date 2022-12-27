@@ -11,9 +11,6 @@ function App() {
     <>
       <Router>
         <Landing />
-        <Forum />
-        <Shop />
-        <Events />
 
         <Routes>
           <Route path="/landing" element={<Landing />} />
