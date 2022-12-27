@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../styles/Landing.css";
 import Nav from "./Nav";
 import Timer from "./Timer";
+import { Link } from "react-router-dom";
 
 function Landing() {
   const [textToCopy] = useState("tiptow.tk");
@@ -82,6 +83,16 @@ function Landing() {
           />
         </div>
       </div>
+      <footer>
+        <Link to="/forum" className="forum-button">
+          FORUM
+          <div className="forum-picture"></div>
+        </Link>
+        <Link to="/shop" className="shop-button">
+          SHOP
+          <div className="shop-picture"></div>
+        </Link>
+      </footer>
     </>
   );
 }

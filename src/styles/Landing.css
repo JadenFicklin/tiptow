@@ -5,11 +5,11 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: none;
-  position: relative;
+  position: fixed;
   z-index: -2;
 }
 .landing-overlay {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   z-index: -1;
@@ -20,7 +20,7 @@
 .landing-outer-overlay-box {
   width: 100%;
   height: 800px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   display: flex;
@@ -77,4 +77,57 @@
   font-weight: 700;
   font-size: 18px;
   padding-left: 40px;
+}
+footer {
+  width: 100%;
+  height: 600px;
+  background-color: #2a2e31;
+  position: absolute;
+  top: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.forum-button,
+.shop-button {
+  height: 440px;
+  width: 35%;
+  background-color: #121414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 47px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  position: relative;
+}
+.forum-button:hover,
+.shop-button:hover {
+  cursor: pointer;
+  height: 450px;
+  width: 37%;
+}
+.forum-picture,
+.shop-picture {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  position: absolute;
+  z-index: 2;
+}
+.forum-picture {
+  background-image: url("../assets/forum.png");
+  width: 330px;
+  height: 270px;
+  right: -150px;
+  bottom: -50px;
+}
+.shop-picture {
+  background-image: url("../assets/shop.png");
+  width: 350px;
+  height: 250px;
+  right: -150px;
+  bottom: -50px;
 }
