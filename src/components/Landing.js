@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Landing.css";
-import Nav from "./Nav";
 import Timer from "./Timer";
 import { Link } from "react-router-dom";
 import {
@@ -61,7 +60,6 @@ function Landing() {
 
   return (
     <>
-      <Nav />
       <div className="landing-outer"></div>
       <div className="landing-overlay"></div>
       <div className="landing-outer-overlay-box">

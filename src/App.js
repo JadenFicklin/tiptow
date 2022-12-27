@@ -5,13 +5,14 @@ import Forum from "./components/Forum";
 import Shop from "./components/Shop";
 import Events from "./components/Events";
 import Signin from "./components/Signin";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <>
       <Router>
+        <Nav />
         <Landing />
-
         <Routes>
           <Route path="/landing" element={<Landing />} />
           <Route path="/forum" element={<Forum />} />
