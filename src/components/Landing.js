@@ -3,6 +3,13 @@ import "../styles/Landing.css";
 import Nav from "./Nav";
 import Timer from "./Timer";
 import { Link } from "react-router-dom";
+import {
+  GiMaze,
+  GiBroadsword,
+  GiSoccerBall,
+  GiJumpAcross,
+  GiWaterPolo,
+} from "react-icons/gi";
 
 function Landing() {
   const [textToCopy] = useState("tiptow.tk");
@@ -72,7 +79,31 @@ function Landing() {
         {ipBoxIn && (
           <div className="copy-ip">{copyClick ? copied : copyText}</div>
         )}
-        <h1 className="header">TIPTOWS SMP SERVER</h1>
+        <h1 className="header">
+          <div className="line-one">
+            <span className="l">T</span>
+            <span className="l">I</span>
+            <span className="l">P</span>
+            <span className="l">T</span>
+            <span className="l">O</span>
+            <span className="l">W</span>
+            <span className="l">S</span>
+          </div>
+          <div className="line-two">
+            {" "}
+            <span className="l">S</span>
+            <span className="l">M</span>
+            <span className="l">P</span>
+          </div>
+          <div className="line-three">
+            <span className="l">S</span>
+            <span className="l">E</span>
+            <span className="l">R</span>
+            <span className="l">V</span>
+            <span className="l">E</span>
+            <span className="l">R</span>
+          </div>
+        </h1>
         <div className="countdown">
           Countdown:{" "}
           <Timer
@@ -81,6 +112,28 @@ function Landing() {
             timerMinutes={timerMinutes}
             timerSeconds={timerSeconds}
           />
+        </div>
+        <div className="icons-outer">
+          <div className="sword-box">
+            <GiBroadsword className="sword-icon" />
+            <div className="sword-text">Survival</div>
+          </div>
+          <div className="sword-box">
+            <GiSoccerBall className="sword-icon" />
+            <div className="sword-text">Soccer</div>
+          </div>
+          <div className="sword-box">
+            <GiJumpAcross className="sword-icon" />
+            <div className="sword-text">Parkour</div>
+          </div>
+          <div className="sword-box">
+            <GiWaterPolo className="sword-icon" />
+            <div className="sword-text">water wars</div>
+          </div>
+          <div className="maze-box">
+            <GiMaze className="maze-icon" />
+            <div className="maze-text">Mazes</div>
+          </div>
         </div>
       </div>
       <footer>
