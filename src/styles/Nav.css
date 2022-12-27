@@ -1,0 +1,59 @@
+.nav-outer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 61px;
+  width: 100%;
+  background-color: #24d1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-inner {
+  width: 900px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo,
+.forum,
+.shop,
+.events,
+.sign-in {
+  padding: 10px;
+  font-weight: 900;
+  font-size: 18px;
+}
+.logo:hover,
+.forum:hover,
+.shop:hover,
+.events:hover,
+.sign-in:hover {
+  cursor: pointer;
+}
+.logo {
+  width: 50px;
+  height: 34px;
+  background-image: url("../assets/logo.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+.sign-in {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 1px;
+  border: 2px solid white;
+  padding: 5px 70px 5px 50px;
+  font-size: 15px;
+  position: relative;
+}
+.sign-in:hover {
+  padding: 6px 71px 6px 51px;
+  margin: -1px;
+}
+.icon {
+  position: absolute;
+  right: 45px;
+}
