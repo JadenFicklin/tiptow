@@ -27,14 +27,14 @@ function Forum() {
           <span className="motd">A beautiful minecraft server</span>
           <div>
             <span className="player-count">
-              {/* {info.players.now}/ {info.players.max} */}
+              {info.players.now}/ {info.players.max}
             </span>{" "}
             Players Online
           </div>
           <div>
-            {/* {info.players.sample.map((x) => (
+            {info.players.sample.map((x) => (
               <h2>{x.name}</h2>
-            ))} */}
+            ))}
           </div>
         </div>
       </div>
