@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Forum.css";
 
 function Forum() {
@@ -17,27 +17,29 @@ function Forum() {
     }
   }
 
-  initServerData("tiptow.tk", "25565");
+  useEffect(() => {
+    initServerData("tiptow.tk", "25565");
+  });
 
   return (
     <>
       <div className="forum-outer">
         <div className="stats">
-          {/* <div className="server-running">
-            Server Running: {JSON.stringify(info.online)}
+          <div className="server-running">
+            Server Running: {JSON.stringify(info?.online)}
           </div>
           <div>
             <span className="player-count">
-              {info.players.now}/ {info.players.max}
+              {info?.players?.now}/ {info?.players?.max}
             </span>{" "}
             Players Online
           </div>
           <div>
             Players:
-            {info.players.sample.map((x) => (
+            {info?.players?.sample?.map((x) => (
               <span>{x.name}</span>
             ))}
-          </div> */}
+          </div>
         </div>
         <div className="forum-outer-inner">
           <div className="forum-box-one">
