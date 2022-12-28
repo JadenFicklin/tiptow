@@ -34,7 +34,7 @@
   padding: 40px 20px;
   position: absolute;
   top: 150px;
-  left: 20%;
+  margin-left: -20%;
   overflow: auto;
 }
 .box-one-header {
@@ -49,6 +49,11 @@
   color: white;
   border-radius: 5px;
   right: 50px;
+  transition: 0.3s;
+}
+.box-one-header:hover {
+  width: 35%;
+  cursor: pointer;
 }
 .circle {
   width: 20px;
@@ -78,7 +83,15 @@
 }
 .post {
   width: 90%;
-  height: 50px;
+  height: 40px;
   background-color: #70787e;
+  border: 1px solid black;
+  border-bottom: none;
   /* margin: 20px 0px 0px 0px; */
+  transition: 0.3s;
+}
+.post:hover {
+  height: 50px;
+  margin-top: -5px;
+  width: 92%;
 }

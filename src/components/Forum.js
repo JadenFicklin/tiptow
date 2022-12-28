@@ -45,6 +45,8 @@ function Forum() {
             Create a thread <div className="circle">+</div>
           </div>
           <div className="post"></div>
+          <div className="post"></div>
+          <div className="post"></div>
         </div>
       </div>
     </>
