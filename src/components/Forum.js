@@ -39,14 +39,24 @@ function Forum() {
             ))}
           </div> */}
         </div>
-        <div className="forum-box-one">
-          <div className="welcome-to-forum">Welcome to the Forum!</div>
-          <div className="box-one-header">
-            Create a thread <div className="circle">+</div>
+        <div className="forum-outer-inner">
+          <div className="forum-box-one">
+            <div className="welcome-to-forum">Welcome to the Forum!</div>
+            <div className="box-one-header">
+              Create a thread <div className="circle">+</div>
+            </div>
+            <div className="post"></div>
+            <div className="post"></div>
+            <div className="post"></div>
           </div>
-          <div className="post"></div>
-          <div className="post"></div>
-          <div className="post"></div>
+          <div className="forum-box-two">
+            <div className="forum-box-two-top">
+              <div className="top-heading">Top Threads</div>
+            </div>
+            <div className="forum-box-two-ranks">
+              <div className="ranks-heading">Ranked Players</div>
+            </div>
+          </div>
         </div>
       </div>
     </>
