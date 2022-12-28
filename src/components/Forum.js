@@ -22,9 +22,10 @@ function Forum() {
   return (
     <>
       <div className="forum-outer">
-        <div className="forum-inner">
-          <h1 className="server-ip">play.myserver.com</h1>
-          <span className="motd">A beautiful minecraft server</span>
+        <div className="stats">
+          {/* <div className="server-running">
+            Server Running: {JSON.stringify(info.online)}
+          </div>
           <div>
             <span className="player-count">
               {info.players.now}/ {info.players.max}
@@ -32,10 +33,18 @@ function Forum() {
             Players Online
           </div>
           <div>
+            Players:
             {info.players.sample.map((x) => (
-              <h2>{x.name}</h2>
+              <span>{x.name}</span>
             ))}
+          </div> */}
+        </div>
+        <div className="forum-box-one">
+          <div className="welcome-to-forum">Welcome to the Forum!</div>
+          <div className="box-one-header">
+            Create a thread <div className="circle">+</div>
           </div>
+          <div className="post"></div>
         </div>
       </div>
     </>
