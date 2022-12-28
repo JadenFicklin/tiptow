@@ -139,10 +139,15 @@ function Landing() {
           FORUM
           <div className="forum-picture"></div>
         </Link>
-        <Link to="/shop" className="shop-button">
+        <a
+          href="https://www.tebex.io/"
+          target={"_blank"}
+          rel="noreferrer"
+          className="shop-button"
+        >
           SHOP
           <div className="shop-picture"></div>
-        </Link>
+        </a>
       </footer>
     </>
   );

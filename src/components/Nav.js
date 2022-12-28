@@ -14,12 +14,19 @@ function Nav() {
           <Link to="/forum">
             <div className="forum">FORUM</div>
           </Link>
-          <Link to="/shop">
-            <div className="shop">SHOP</div>
-          </Link>
-          <Link to="/events">
+
+          <a
+            href="https://www.tebex.io/"
+            target={"_blank"}
+            rel="noreferrer"
+            className="shop"
+          >
+            SHOP
+          </a>
+
+          {/* <Link to="/events">
             <div className="events">EVENTS</div>
-          </Link>
+          </Link> */}
           <Link to="/signin">
             <div className="sign-in">
               SIGN IN <AiFillCaretDown className="icon" />
